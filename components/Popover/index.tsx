@@ -33,7 +33,7 @@ const Popover = (props: Popover) => {
       offsetWidth,
     } = buttonRef.current
 
-    const calcTopPosition = `${(offsetTop - (offsetHeight - 16)) / 16}rem`
+    const calcTopPosition = `${(offsetTop - (offsetHeight)) / 16}rem`
     const calcLeftPosition = `${(offsetLeft - offsetWidth) / 16}rem`
 
     setAnchorElement({
@@ -53,7 +53,7 @@ const Popover = (props: Popover) => {
         onMouseOver={getPositionElement}
         onMouseLeave={handleVisibilityPopover}
         type="button"
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-10 h-10 px-1 py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         {props.principalText}
       </button>
 
